@@ -7,9 +7,7 @@ import {
   Menu,
   X,
   Code,
-  Briefcase,
   User,
-  MessageSquare,
   Download,
   ChevronDown,
   Sparkles,
@@ -19,11 +17,9 @@ const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("inicio");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
       const sections = [
         "inicio",
         "sobre-mi",
@@ -157,7 +153,7 @@ const Portfolio = () => {
     },
     {
       category: "DevOps",
-      items: [ "Git", "Linux"],
+      items: ["Git", "Linux"],
       icon: "🚀",
       color: "from-orange-500 to-red-600",
     },
@@ -169,7 +165,7 @@ const Portfolio = () => {
     },
     {
       category: "Otras",
-      items: ["Scrum", "Testing", "Microservicios",],
+      items: ["Scrum", "Testing", "Microservicios"],
       icon: "✨",
       color: "from-green-500 to-emerald-600",
     },
@@ -326,7 +322,7 @@ const Portfolio = () => {
                 />
               </a>
               <a
-                href="mailto:eamayaparco@gmail.com"
+                href="mailto:eamayaparco@email.com"
                 target="_blank"
                 rel="nooper noreferrer"
                 className="group p-4 bg-white/5 rounded-full border border-white/10 hover:border-pink-400 hover:bg-white/10 transition-all hover:scale-110"
@@ -565,13 +561,13 @@ const Portfolio = () => {
 
                 <div className="space-y-6 mb-12">
                   <a
-                    href="eamayaparco@email.com"
+                    href="mailto:eamayaparco@gmail.com"
                     className="group flex items-center justify-center gap-4 text-xl hover:text-cyan-400 transition-colors"
                   >
                     <div className="p-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full">
                       <Mail className="text-white" size={24} />
                     </div>
-                    <span className="font-medium">eamayaparco@email.com</span>
+                    <span className="font-medium">eamayaparco@gmail.com</span>
                   </a>
 
                   <a
@@ -615,9 +611,7 @@ const Portfolio = () => {
         {/* Footer */}
         <footer className="py-12 px-4 border-t border-white/10">
           <div className="max-w-7xl mx-auto text-center">
-            <p className="text-white/60 text-lg">
-              © 2026 Tu Nombre. Hecho con 💜 y mucho ☕
-            </p>
+            <p className="text-white/60 text-lg">© 2026 Elias Amaya Parco</p>
             <p className="text-white/40 mt-2">
               Diseñado y desarrollado con pasión
             </p>
